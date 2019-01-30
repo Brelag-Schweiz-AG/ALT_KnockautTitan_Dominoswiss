@@ -2,7 +2,7 @@
 include_once __DIR__ . '/../DominoSwissMXFEShutter/module.php';
 
     // Klassendefinition
-class UTCWerte extends DominoSwissMXFEShutter {
+class DominoSwissUTC extends DominoSwissMXFEShutter {
 
         // Der Konstruktor des Moduls
         // Überschreibt den Standard Kontruktor von IPS
