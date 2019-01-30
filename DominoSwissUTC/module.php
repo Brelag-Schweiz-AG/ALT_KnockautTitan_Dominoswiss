@@ -22,7 +22,7 @@ class DominoSwissUTC extends DominoSwissMXFEShutter {
 		parent::Create();
 
 		 // Property für ID
-		 $this->RegisterPropertyInteger("ID", 0);
+		 $this->RegisterPropertyInteger("IDUTC", 0);
 
 		 // Profil für Temperatur und Lichtfühler
 
@@ -61,7 +61,7 @@ class DominoSwissUTC extends DominoSwissMXFEShutter {
 
 	    // Datenverarbeitung und schreiben der Werte in die Statusvariablen
 
-	    if($data->Values->ID == $this->ReadPropertyInteger("ID"))
+	    if($data->Values->ID == $this->ReadPropertyInteger("IDUTC"))
 	    {
 	        $command = $data->Values->Command;
 	        switch($command)
