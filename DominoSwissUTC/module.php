@@ -1,8 +1,6 @@
 <?
-include_once __DIR__ . '/../DominoSwissMXFEShutter/module.php';
-
     // Klassendefinition
-class DominoSwissUTC extends DominoSwissMXFEShutter {
+class DominoSwissUTC extends IPSModule  {
 
         // Der Konstruktor des Moduls
         // Überschreibt den Standard Kontruktor von IPS
